@@ -8,7 +8,9 @@ This Project was developed by:
 This is the repository for the Final Test (Prova Finale) of Algorithms and Principles of Computer Science (Algoritmi e Principi dell'Informatica) in the academic year 2022/2023 at Polytechnic of Milan.
 
 Subject: 052509 - Prova Finale (Progetto di Algoritmi e Strutture Dati)
+
 Professor: Barenghi Alessandro
+
 Academic Year: 2022/2023
 
 ## Description of the Project
