@@ -1,13 +1,13 @@
 # Algorithms and Principles of Computer Science: Final Test
 
-# Authors
+## Authors
 This Project was developed by:
 - Francesco Di Giore
 
-# Introduction
+## Introduction
 This is the repository for the Project of Algorithms and Principles of Computer Science (Algoritmi e Principi dell'Informatica) in the academic year 2022/2023 at Polytechnic of Milan.
 
-# Description of the Project
+## Description of the Project
 The Project is called *CercaPercorso* (Find Route) and it simulates an electric car rental system distributed along a highway with service stations, each located at a unique distance (in km) from the start.
 Each station maintains a fleet of up to 512 electric cars, where each car has a fixed autonomy (km range). Given a start and end station, the program must plan a trip with the minimum number of stops. If multiple routes have the same number of stops, the path that prioritizes stations closer to the highway start is chosen.
 
@@ -24,7 +24,7 @@ For further details, please review the [full description](Requirements/Descripti
 
 For the open tests used to test locally the provided solution, pleas refer to the folder [Requirements](Requirements), and to the files Open_Tests_1,2,3,4.
 
-# Algorithm
+## Algorithm
 The program models an **autostrada (highway)** as a set of **stations**, each uniquely identified by its distance from the start. Every station maintains a **sorted list of car autonomies** (maximum range per car).  
 
 The goal of the algorithm is to compute a **trip plan** between two given stations that:  
