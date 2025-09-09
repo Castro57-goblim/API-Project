@@ -5,7 +5,7 @@ This Project was developed by:
 - Francesco Di Giore
 
 ## Introduction
-This is the repository for the Project of Algorithms and Principles of Computer Science (Algoritmi e Principi dell'Informatica) in the academic year 2022/2023 at Polytechnic of Milan.
+This is the repository for the Final Test (Prova Finale) of Algorithms and Principles of Computer Science (Algoritmi e Principi dell'Informatica) in the academic year 2022/2023 at Polytechnic of Milan.
 
 ## Description of the Project
 The Project is called *CercaPercorso* (Find Route) and it simulates an electric car rental system distributed along a highway with service stations, each located at a unique distance (in km) from the start.
