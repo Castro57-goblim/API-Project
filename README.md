@@ -26,9 +26,9 @@ Supported Commands:
 
 The program reads these commands from a text file and prints the required responses (aggiunta, demolita, rottamata, nessun percorso, or the sequence of station distances).
 
-For further details, please review the [full description](Requirements/Description_2022_2023.pdf).
+For further details, please review the [full description](Specifications/Description_2022_2023.pdf).
 
-For the open tests used to test locally the provided solution, pleas refer to the folder [Requirements](Requirements), and to the files Open_Tests_1,2,3,4.
+For the open tests used to test locally the provided solution, please refer to the folder [Specifications](Specifications), and to the files Open_Tests_1,2,3,4.
 
 ## Algorithm
 The program models an **autostrada (highway)** as a set of **stations**, each uniquely identified by its distance from the start. Every station maintains a **sorted list of car autonomies** (maximum range per car).  
