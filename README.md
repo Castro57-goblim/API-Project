@@ -73,4 +73,4 @@ Both BFS implementations guarantee:
   - Sorting (`quickSort`) is used when stations are spread across hash buckets.
 
 # Final Considerations
-Final mark: 30/30
+Final Mark: 30/30
