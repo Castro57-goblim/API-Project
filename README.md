@@ -4,6 +4,8 @@
 This Project was developed by:
 - Francesco Di Giore
 
+With Professor Barenghi Alessandro.
+
 ## Introduction
 This is the repository for the Final Test (Prova Finale) of Algorithms and Principles of Computer Science (Algoritmi e Principi dell'Informatica) in the academic year 2022/2023 at Polytechnic of Milan.
 
